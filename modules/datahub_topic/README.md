@@ -1,26 +1,4 @@
-# terraform-will-datahub-topic
-
-This Terraform module will create a topic. The topic is the basic unit of Datahub data source and is used to define one kind of data or stream. It contains a set of subscriptions.
-
-These types of resources are supported:
-- [alicloud_datahub_topic](https://www.terraform.io/docs/providers/alicloud/r/datahub_topic.html)
-
-## Usage
-you can write these code in you main.tf
-```
-module "mq" {
-  source  = "Coder-B/mq/will"
-  version = "1.0.0"
-  name = "message_queue_instance"
-  remark = "this is a message queue"
-}
-```
-**key settings**<br>
-Setting `access_key` and `secret_key` values through environment variables:
-
-    - ALICLOUD_ACCESS_KEY
-    - ALICLOUD_SECRET_KEY
-
+# alicloud_datahub_topic
 
 ## Inputs
 
