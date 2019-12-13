@@ -8,7 +8,7 @@ provider "alicloud" {
 # datahub topic
 #################
 module "topic" {
-    source = "./modules/datahub-topic"
+    source = "./modules/datahub_topic"
     name         = var.name
     project_name = var.project_name
     record_type  = var.record_type

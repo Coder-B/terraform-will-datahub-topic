@@ -8,11 +8,15 @@ These types of resources are supported:
 ## Usage
 you can write these code in you main.tf
 ```
-module "mq" {
-  source  = "Coder-B/mq/will"
-  version = "1.0.0"
-  name = "message_queue_instance"
-  remark = "this is a message queue"
+module "datahub-topic" {
+  source  = "Coder-B/datahub-topic/will"
+  version = "0.0.2"
+  name         = "tf_datahub_topic"
+  project_name = "tf_datahub_project"
+  record_type  = "BLOB"
+  shard_count  = 3
+  life_cycle   = 7
+  comment      = "created by terraform"
 }
 ```
 **key settings**<br>
